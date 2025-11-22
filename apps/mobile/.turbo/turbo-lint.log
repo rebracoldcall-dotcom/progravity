@@ -1,0 +1,27 @@
+
+> mobile@0.0.0 lint C:\Users\rinoruser\Desktop\progravity\apps\mobile
+> biome check .
+
+metro.config.js:2:22 lint/style/useNodejsImportProtocol  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i A Node.js builtin module should be imported with the node: protocol.
+  
+    1 │ const { getDefaultConfig } = require("expo/metro-config");
+Checked 6 files in 19ms. No fixes applied.
+Found 1 info.
+  > 2 │ const path = require("path");
+      │                      ^^^^^^
+    3 │ 
+    4 │ const projectRoot = __dirname;
+  
+  i Using the node: protocol is more explicit and signals that the imported module belongs to Node.js.
+  
+  i Unsafe fix: Add the node: protocol.
+  
+     1  1 │   const { getDefaultConfig } = require("expo/metro-config");
+     2    │ - const·path·=·require("path");
+        2 │ + const·path·=·require("node:path");
+     3  3 │   
+     4  4 │   const projectRoot = __dirname;
+  
+

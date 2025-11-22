@@ -1,0 +1,39 @@
+
+> web@0.0.0 build C:\Users\rinoruser\Desktop\progravity\apps\web
+> next build
+
+   ▲ Next.js 14.1.0
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    142 B          84.4 kB
+├ ○ /_not-found                          884 B          85.2 kB
+├ λ /api/trpc/[trpc]                     0 B                0 B
+├ ○ /dashboard                           142 B          84.4 kB
+├ ○ /dashboard/chat                      2.33 kB         119 kB
+├ λ /sign-in/[[...sign-in]]              202 B           122 kB
+└ λ /sign-up/[[...sign-up]]              202 B           122 kB
++ First Load JS shared by all            84.3 kB
+  ├ chunks/686-b9f163ce11b49d63.js       28.9 kB
+  ├ chunks/69c4c07a-aea829166f2f326f.js  53.4 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+ƒ Middleware                             129 kB
+
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
