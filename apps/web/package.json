@@ -1,0 +1,46 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check ."
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.35.4",
+    "@progravity/ai": "workspace:*",
+    "@progravity/billing": "workspace:*",
+    "@progravity/contracts": "workspace:*",
+    "@progravity/feature-flags": "workspace:*",
+    "@progravity/tokens": "workspace:*",
+    "@progravity/ui": "workspace:*",
+    "@sentry/nextjs": "^10.26.0",
+    "@tanstack/react-query": "^5.90.10",
+    "@trpc/client": "^11.7.1",
+    "@trpc/next": "^11.7.1",
+    "@trpc/react-query": "^11.7.1",
+    "@trpc/server": "^11.7.1",
+    "lucide-react": "^0.344.0",
+    "next": "14.1.0",
+    "next-themes": "^0.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.66.1",
+    "replicache": "^14.2.2",
+    "replicache-react": "^5.0.1",
+    "superjson": "^2.2.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@progravity/config": "workspace:*",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}

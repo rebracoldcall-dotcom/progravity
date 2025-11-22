@@ -1,0 +1,9 @@
+{
+  "extends": "@progravity/config/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": ["ES2015"]
+  },
+  "include": ["src"]
+}
